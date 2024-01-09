@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
     <script src="js/scripts.js" defer></script>
@@ -13,10 +13,10 @@
         <div class="logo">Matheus Gonçalves</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -29,17 +29,30 @@
             <span></span>
         </div>
         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
         </div>
     </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src=".assets/profile-pic.png" alt="Foto de perfil de Matheus Gonçalves">
+            <img src="assets/profile-pic.png" alt="Foto de perfil de Matheus Gonçalves">
         </div>
+        <div class="section__text">
+            <p class="section__text__p1">Olá, eu sou</p>
+            <h1 class="title">Matheus Gonçalves</h1>
+            <p class="section__text__p2">Estudante de Engenharia da Computação</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-portuguese.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Informações de contato</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Meu perfil do LinkedIn" class="icon" onclick="window.open('https://linkedin.com/in/matheusgoncalves2')">
+                <img src="./assets/github.png" alt="Meu perfil do Github" class="icon" onclick="window.open('https://github.com/matheusgoncalves')">
+            </div>
+        </div>        
     </section>
     <h1>Hello</h1>
 </body>
