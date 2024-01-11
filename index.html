@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
     <script src="js/scripts.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Matheus Gonçalves</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
+      <div class="logo">Matheus Gonçalves</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-    <div class="logo">Matheus Gonçalves</div>
-    <div class="hamburger-menu">
+      <div class="logo">Matheus Gonçalves</div>
+      <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
         </div>
-    </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/profile-pic.png" alt="Foto de perfil de Matheus Gonçalves">
+      <div class="section__pic-container">
+        <img
+          src="assets/profile-pic.png"
+          alt="Foto de perfil de Matheus Gonçalves"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Matheus Gonçalves</h1>
+        <p class="section__text__p2">Estudante de Engenharia da Computação</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-portuguese.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Informações de contato
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Olá, eu sou</p>
-            <h1 class="title">Matheus Gonçalves</h1>
-            <p class="section__text__p2">Estudante de Engenharia da Computação</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-portuguese.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Informações de contato</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Meu perfil do LinkedIn" class="icon" onclick="window.open('https://linkedin.com/in/matheusgoncalves2')">
-                <img src="./assets/github.png" alt="Meu perfil do Github" class="icon" onclick="window.open('https://github.com/matheusgoncalves')">
-            </div>
-        </div>        
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perfil do LinkedIn"
+            class="icon"
+            onclick="window.open('https://linkedin.com/in/matheusgoncalves2')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Meu perfil do Github"
+            class="icon"
+            onclick="window.open('https://github.com/matheusgoncalves')"
+          />
+        </div>
+      </div>
     </section>
-    <h1>Hello</h1>
-</body>
+    <section id="about">
+      <p class="section__text__p1">Conheça melhor</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Foto de perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Ícone de educação"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>Cursando Bacharelado em Engenharia da Computação</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Entusiasta de tecnologia desde a infância, desenvolvi sólidas habilidades interpessoais em experiências anteriores com atendimento ao público. Atualmente, busco meu primeiro estágio na área de TI para aplicar e aprimorar conhecimentos em situações práticas. Concentro meus estudos em Desenvolvimento Front-End, com foco em HTML, CSS e JavaScript, demonstrado por diversos projetos de estudo abrangendo também áreas como Desenvolvimento Back-End, Dados, Segurança da Informação e Inteligência Artificial.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de seta"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+  </body>
 </html>
