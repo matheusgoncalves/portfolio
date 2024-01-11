@@ -264,6 +264,8 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .about-containers,
@@ -339,4 +341,42 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* Seção de Projetos */
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(249, 249, 249);
+  max-width: 19rem;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 17rem;
+  height: 17rem;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.experience-details-container .about-containers {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#projects .arrow {
+  position: absolute;
+  right: -0rem;
+  bottom: -16.5rem;
 }
